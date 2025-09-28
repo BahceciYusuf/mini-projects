@@ -27,9 +27,17 @@ This repository serves as:
 2. Check its `README.md` for instructions  
 3. Compile or run the code depending on the language  
 
-Example for C project:
-```bash
-cd hotel_reservation
-gcc hotel_reservation.c -o hotel_reservation
-./hotel_reservation
 
+## 🌟 Future Plans
+
+- 📚 Add more projects as I progress in my studies  
+- 🌐 Expand into web and mobile app projects  
+- 📝 Improve documentation and add sample inputs/outputs  
+- 🤝 Collaborate on open-source projects  
+
+## ✨ About Me
+
+👋 Hi, I’m **Yusuf Bahçeci**, a Computer Engineering student at **Galatasaray University**.  
+I’m passionate about **technology, software development, and building useful projects** that bring ideas to life.  
+
+📫 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/bahceciyusuf) or check out my other repos!  
