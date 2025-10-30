@@ -1,0 +1,10 @@
+# Build outputs
+bst
+*.o
+*.out
+
+# Default compiled binaries
+a.out
+
+# macOS
+.DS_Store
