@@ -28,17 +28,17 @@ treeNode *Delete(treeNode *node, int data)
     treeNode *temp;
     if (node == NULL)
     {
-        printf("NODE NOT FOUND !\n");
+        return NULL;
     }
 
-    if (node->data < data)
+    if (data < node->data)
     {
         node->left = Delete(node->left, data);
     }
 
-    if (node->data > data)
+    else if (data > node->data)
     {
-        node->right = Deelete(node->right, data);
+        node->right = Delete(node->right, data);
     }
 
     // bulunursa else e girecek
@@ -106,19 +106,16 @@ treeNode *Find(treeNode *node, int data)
 {
     if (!node)
     {
-        printf("Tree is empty!\n");
         return NULL;
     }
 
     if (node->data == data)
         return node;
+
+    if (data < node->data)
+        return Find(node->left, data);
     else
-    {
-        if (node->data < data)
-            return Find(node->right, data);
-        if (node->data > data)
-            return Find(node->left, data);
-    }
+        return Find(node->right, data);
 }
 
 void printPreorder(treeNode *node){

@@ -1,15 +1,14 @@
-#ifndef TREES.H
-#define TREES.H
+#ifndef TREES_H
+#define TREES_H
 
 #include <stdio.h>
 #include <stdlib.h>
 
 
 typedef struct treeNode{
-    treeNode * left;
-    treeNode * right;
+    struct treeNode * left;
+    struct treeNode * right;
     int data;
-    
 }treeNode;
 // Ağaca yeni bir düğüm ekler 
 treeNode *Insert(treeNode *node, int data);
@@ -28,10 +27,13 @@ treeNode *FindMax(treeNode *node);
 treeNode *Find(treeNode *node, int data);
 
 // Ağacı Inorder sırayla yazdırır 
-void PrintInorder(treeNode *node);
+void printInorder(treeNode *node);
 
-// Ağacı Preorder sırayla yazdırır (
-void PrintPreorder(treeNode *node);
+// Ağacı Preorder sırayla yazdırır 
+void printPreorder(treeNode *node);
+
+// Ağacı Postorder sırayla yazdırır 
+void printPostorder(treeNode *node);
 
 
 
